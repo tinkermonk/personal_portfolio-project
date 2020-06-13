@@ -5,6 +5,12 @@
     <title>Portfolio</title>
 </head>
 <body>
+
+{% load static %}
+<a href="{% static 'portfolio/Yassif Nagim CV.pdf' %}">CV</a>
+
+<img src="{% static 'portfolio/Dynamics Logo crop.jpg' %}">
+
 <h1>My Portfolio</h1>
 {% for project in projects %}
 
