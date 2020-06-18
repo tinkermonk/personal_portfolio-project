@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Blogs</title>
-</head>
-<body>
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+
+
 <h1>My Blogs</h1>
 
 <h2>Nick has written {{ blogs.count }} blog{{ blogs.count|pluralize }}</h2>
@@ -17,5 +15,5 @@
 
 
 {% endfor %}
-</body>
-</html>
+
+{% endblock %}
